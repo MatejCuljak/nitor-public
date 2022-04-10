@@ -1,0 +1,176 @@
+:root{
+    scroll-behavior: smooth;
+    --navBarShadow: 3px 3px 6px 0px rgba(0,0,0,0.24);
+    --footerShadow:0px -3px 6px 0px rgba(0,0,0,0.24);
+    --boxShadow:0px 3px 6px 0px rgba(0,0,0,0.24);
+    --navShadow:#ffffff;
+    --borderRadious: 0.8rem;
+    --speed: 500ms;
+    --aspectRatio: 45vw;
+    --incrementFeed: 5;
+    --font: 1rem;
+    --container: 0.0373fr;
+    --transperent: hsla(0, 0%, 100%, 0);
+}
+
+/*DEAFULT OWERIDE*/
+img, svg{
+  pointer-events: none;
+} 
+a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Roboto',Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  overflow-x: hidden;
+  background-color: var(--base);
+  background-image: url("https://nstatic.nitorapp.com/assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position-x: center;
+  background-position-y: 42vh;
+}
+
+nav{
+  background-color: var(--action);
+  box-shadow: var(--navBarShadow);
+  border-radius: var(--borderRadious);
+  padding: 0.7rem 0.7rem 0.5rem 0.5rem;
+  position: fixed;
+  right: -0.5rem;
+  top: -0.5rem;
+}
+
+.logo h1{
+  font-weight: 400;
+  font-size: 5rem;
+  margin-left: 0.45rem;
+}
+.logo{
+  margin-top: -0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img, svg{
+  height: var(--height);
+  width: var(--width);
+  fill: var(--fill);
+}
+
+button{
+  background-color: var(--bgColor);
+  color: var(--txtColor);
+  width: var(--width);
+  padding: var(--padding);
+  margin: var(--margin);
+  text-decoration: none;
+  font-size: calc(var(--fSize) + var(--font));
+  border-style: none;
+  border-radius: var(--borderRadious);
+  box-shadow: var(--navBarShadow);
+  z-index: var(--zIndex);
+  position: var(--position);
+  top: var(--top);
+  bottom: var(--bottom);
+  right: var(--right);
+}
+button:hover{
+  opacity: var(--opacaty);
+}
+button:focus-within{
+  opacity: var(--focusOpacaty);
+}
+
+main{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 28.125% 10.82% 3.9% 2.45% 5% 4.91% 42.41% 1.45%;
+  place-items: center;
+  height: 100vh;
+}
+input{
+  background-color: var(--bgColor);
+  color: var(--txtColor);
+  width: var(--width);
+  padding: var(--padding);
+  margin: var(--margin);
+  text-decoration: none;
+  font-size: calc(var(--fSize) + var(--font));
+  border-style: none;
+  border-radius: var(--borderRadious);
+  box-shadow: var(--navBarShadow);
+  z-index: var(--zIndex);
+  position: var(--position);
+  top: var(--top);
+  bottom: var(--bottom);
+  right: var(--right);
+}
+input:hover{
+  opacity: var(--opacaty);
+}
+input:focus-within{
+  opacity: var(--focusOpacaty);
+  outline: dotted var(--primary);
+}
+.inline{
+  width: var(--width);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text{
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
+  text-align: var(--textAlign);
+  color: var(--color);
+}
+
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--transperentSecondary); 
+  border-radius: 0.25em;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2226293f; 
+  border-radius: 0.25em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondaryColor);
+}
+
+
+footer{
+  padding: 0.7rem 0.7rem 0.5rem 0.5rem;
+  box-shadow: var(--footerShadow);
+  background-color: var(--action);
+  color: var(--secondary);
+}
+.grid{
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+embed{
+  width: 12.5rem;
+  height: 4.1rem;
+}

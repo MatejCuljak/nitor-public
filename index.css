@@ -1,0 +1,321 @@
+@import url('fonts/stylesheet.css');
+/*v 0.0.1*/
+:root{
+    scroll-behavior: smooth;
+    --primaryColor: #ffffff;
+    --secondaryColor: #05668D;
+    --textColorPrimary: #222629;
+    --textColorSecondary: #ffffff;
+    --navColor:#ffffff;
+    --navBarShadow:0px 3px 6px 0px rgba(0,0,0,0.24);
+    --navShadow:#ffffff;
+    --borderRadious: 1em;
+    --speed: 500ms;
+}
+/*GENERAL*//*DONE*/
+main img, main svg{
+	pointer-events: none;
+}
+body{
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+a{
+  color: var(--textColorPrimary);
+  text-decoration: none;
+}
+
+main{
+  margin: 0 5em 0 5em;
+}
+
+/*NAVBAR*//*DONE*/
+header{
+  position: sticky;
+  top: 0;
+  color: var(--textColorPrimary);
+  background-color: var(--primaryColor);
+  box-shadow: var(--navBarShadow);
+  padding: 0.4em 0 0.4em 0;
+  width: 100%;
+}
+
+.navbar{
+  margin: 0 5em 0 5em;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
+}
+
+header img, header img{
+  height: 2.25em;
+}
+header span{
+  font-size: 1.5em;
+}
+
+.logo{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-align-items:center;
+  align-items:center;
+}
+
+.actv{
+  position: fixed;
+  top: 4em;
+  right: 2em;
+  padding: 1em 2em 1em 0;
+  color: var(--textColorPrimary);
+  background-color: var(--primaryColor);
+  box-shadow: var(--navBarShadow);
+  display: block;
+	height: auto;
+  opacity: 1;
+}
+.left{
+  float: right;
+}
+
+.inact{
+  display: none;
+  opacity: 0;
+}
+
+/*DONE*/
+main img, main svg{
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -webkit-justify-content:space-around;
+  justify-content:space-around;
+}
+.flex-container-secondary{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-direction:row-reverse;
+  flex-direction:row-reverse;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -webkit-justify-content:space-around;
+  justify-content:space-around;
+}
+
+
+.flex-item{
+  height: 35em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*SCROLL BAR*//*DONE*/
+/* width */
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2226293f; 
+  border-radius: 0.25em;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2226293f; 
+  border-radius: 0.25em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #05668D;
+}
+
+/*DONE*/
+h1,h2,p{
+  color: var(--textColorPrimary);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 2.9em;
+  text-transform: uppercase;
+}
+h1{
+  font-size: 2.9em;
+  text-transform: uppercase;
+}
+p{
+  font-size: 1.8em;
+}
+
+
+.button{
+  border-radius: 1em;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 1em;
+}
+.buttonS{
+  margin-top: 6em;
+  border-radius: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0.8em;
+}
+.primary{
+  color: var(--textColorSecondary);
+  background-color: var(--secondaryColor);
+}
+.secondary{
+  color: var(--textColorPrimary);
+  background-color: var(--primaryColor);
+}
+.tridly{
+  color: var(--textColorSecondary);
+  background-color: var(--textColorPrimary);
+}
+.fourtly{
+  color: var(--textColorSecondary);
+  background-color: #2F8980;
+}
+.fiftly{
+  color: var(--textColorSecondary);
+  background-color: #61892F;
+}
+.sixtly{
+  color: var(--textColorSecondary);
+  background-color: var(--secondaryColor);
+}
+.sevently{
+  color: var(--textColorSecondary);
+  background-color: #892F2F;
+}
+
+/*HERO*//*IN WORK*/
+.hero{
+  height: 100vh;
+  background: url("res/gastrocloud_table_vintage_restaurant.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+  margin-top: -100vh;
+  text-align: center;
+}
+
+.header div h1{
+  color: var(--primaryColor);
+  margin-top: 40vh;
+}
+
+.product img, .product svg {
+  height: 17em;
+}
+
+.txtCenter{
+  text-align: center;
+}
+
+/*FOOTER*//*DONE*/
+footer{
+  width: 100%;
+  margin-top: 14em;
+  background-color: var(--primaryColor);
+  box-shadow: var(--navBarShadow);
+}
+
+footer div{
+  margin: 0 5em 0 5em;
+}
+
+footer div div div{
+  margin: 5em 0 5em 0;
+}
+footer div div div div{
+  align-items: center;
+  justify-content: center;
+}
+
+ul li{
+  text-align: center;
+  list-style: none;
+}
+
+ul li img, ul li svg{
+  height: 5em;
+}
+ul li{
+  margin-top: 1em;
+}
+.line{
+  margin: 0 5em 0 5em;
+  background-color: #22262948;
+  height: 0.1em;
+  border-radius: var(--borderRadious);
+}
+.footerInfo img, .footerInfo svg{
+  height: 2em;
+  margin-right: 1em;
+  padding: 0.5em;
+}
+
+.copyright{
+  text-align: center;
+}
+
+/*DONE*/
+@media only screen and (max-width: 834px){
+  nav div ul li{
+    font-size: 2em;
+  }
+  .navbar, main{
+    margin: 0 1em 0 1em;
+  }
+  .header div h1{    
+    margin-top: 20vh;
+  }
+  .actv{
+    position: fixed;
+    top: 3.5em;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    color: var(--textColorPrimary);
+    background-color: var(--primaryColor);
+    box-shadow: var(--navBarShadow);
+
+  }
+  .actv ul{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .flex-item{
+    width: 100%;
+  }
+  .footerInfo{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-justify-content:center;
+    justify-content:center;
+  }
+}

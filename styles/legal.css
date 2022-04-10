@@ -1,0 +1,19 @@
+:root{
+    scroll-behavior: smooth;
+    --navBarShadow: 3px 3px 6px 0px rgba(0,0,0,0.24);
+    --footerShadow:0px -3px 6px 0px rgba(0,0,0,0.24);
+    --boxShadow:0px 3px 6px 0px rgba(0,0,0,0.24);
+    --navShadow:#ffffff;
+    --borderRadious: 0.8rem;
+    --speed: 500ms;
+    --aspectRatio: 45vw;
+    --incrementFeed: 5;
+    --font: 1rem;
+    --container: 0.0373fr;
+    --transperent: hsla(0, 0%, 100%, 0);
+}
+
+/*DEAFULT OWERIDE*/
+img, svg{
+    pointer-events: none;
+} 

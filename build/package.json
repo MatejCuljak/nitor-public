@@ -1,0 +1,9 @@
+{
+    "name": "buildy",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "build.js",
+    "author": "Matej Čuljak",
+    "license": ""
+}

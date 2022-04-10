@@ -1,0 +1,70 @@
+:root{
+    scroll-behavior: smooth;
+    --navBarShadow: 3px 3px 6px 0px rgba(0,0,0,0.24);
+    --footerShadow:0px -3px 6px 0px rgba(0,0,0,0.24);
+    --boxShadow:0px 3px 6px 0px rgba(0,0,0,0.24);
+    --navShadow:#ffffff;
+    --borderRadious: 0.8rem;
+    --speed: 500ms;
+    --aspectRatio: 45vw;
+    --incrementFeed: 5;
+    --font: 1rem;
+    --container: 0.0373fr;
+    --transperent: hsla(0, 0%, 100%, 0);
+}
+
+/*DEAFULT OWERIDE*/
+img, svg{
+  pointer-events: none;
+} 
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Roboto',Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+.close{
+  padding: 0.7rem 0.7rem 0.5rem 0.5rem;
+  position: fixed;
+  right: -0.5rem;
+  top: -0.5rem;
+}
+nav{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25.5% 12.5% 12.5% 12.5% 12.5% 22% 1.45%;
+  place-items: center;
+  height: 100vh;
+}
+
+
+.text{
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
+  text-align: var(--textAlign);
+  color: var(--color);
+}
+
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--transperentSecondary); 
+  border-radius: 0.25em;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2226293f; 
+  border-radius: 0.25em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondaryColor);
+}
